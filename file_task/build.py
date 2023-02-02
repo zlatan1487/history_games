@@ -1,3 +1,5 @@
+import random
+
 
 def guess_questions(words, user):
     """
@@ -6,9 +8,11 @@ def guess_questions(words, user):
     """
     with open(words, encoding='utf-8') as words:
         for word in words:
-            word_ = word[::-1].strip()
+            word_ = list(word.strip('\n'))
+            random.shuffle(word_)
+            word_shuffle = ''.join(word_)
 
-            answer = input(f'Угадайте слово:{word_} ')
+            answer = input(f'Угадайте слово:{word_shuffle} ')
 
             if word.strip() == answer.lower():
                 user['points'] += 10

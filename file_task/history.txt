@@ -8,3 +8,4 @@ lisa 0
 Алина 20
 qwerty 0
 marselo 20
+nikolas 10
