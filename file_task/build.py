@@ -10,7 +10,7 @@ def guess_questions(words, user):
 
             answer = input(f'Угадайте слово:{word_} ')
 
-            if word.strip() == answer:
+            if word.strip() == answer.lower():
                 user['points'] += 10
                 points = user['points']
                 print(f'Верно, это {word.strip()}. Вы получаете {points} очков.')
