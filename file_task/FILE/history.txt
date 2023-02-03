@@ -9,3 +9,5 @@ lisa 0
 qwerty 0
 marselo 20
 nikolas 10
+pioli 10
+didier 0
